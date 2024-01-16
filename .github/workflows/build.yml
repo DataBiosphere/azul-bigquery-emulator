@@ -1,8 +1,8 @@
 name: build and push image
 on:
   push:
-    tags:
-      - v*
+    branches:
+      - azul
 env:
   REGISTRY: ghcr.io
 
@@ -17,10 +17,7 @@ jobs:
       - uses: docker/metadata-action@v3
         id: meta
         with:
-          images: ${{ env.REGISTRY }}/goccy/bigquery-emulator
-          tags: |
-            type=semver,pattern={{version}}
-            type=semver,pattern={{major}}.{{minor}}
+          images: ${{ env.REGISTRY }}/hannes-ucsc/bigquery-emulator
       - name: setup docker buildx
         uses: docker/setup-buildx-action@v2
       - name: cache for linux
