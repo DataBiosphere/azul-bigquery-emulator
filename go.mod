@@ -89,4 +89,4 @@ require (
 	google.golang.org/genproto/googleapis/api v0.0.0-20230822172742-b8732ec3820d // indirect
 )
 
-replace github.com/goccy/go-zetasqlite => github.com/hannes-ucsc/go-zetasqlite v0.18.1-0.20240116012711-72f25d5d64f8
+replace github.com/goccy/go-zetasqlite => github.com/DataBiosphere/azul-go-zetasqlite v0.18.1-0.20240325224127-861082630394
