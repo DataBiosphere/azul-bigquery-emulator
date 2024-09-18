@@ -30,6 +30,7 @@ check_registry:
 images: check_registry
 	DOCKER_HOST=$$(docker context inspect --format '{{.Endpoints.docker.Host}}') \
 	act \
+	    --container-architecture linux/amd64 \
 		--env azul_docker_registry="localhost:$(registry_port)/" \
 		--remote-name $(git_remote) \
 		push
