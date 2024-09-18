@@ -62,7 +62,7 @@ require (
 	github.com/mattn/go-colorable v0.1.12 // indirect
 	github.com/mattn/go-isatty v0.0.17 // indirect
 	github.com/mattn/go-runewidth v0.0.9 // indirect
-	github.com/mattn/go-sqlite3 v1.14.16 // indirect
+	github.com/mattn/go-sqlite3 v1.14.23 // indirect
 	github.com/minio/asm2plan9s v0.0.0-20200509001527-cdd76441f9d8 // indirect
 	github.com/minio/c2goasm v0.0.0-20190812172519-36a3d3bbc4f3 // indirect
 	github.com/olekukonko/tablewriter v0.0.5 // indirect
@@ -89,4 +89,4 @@ require (
 	google.golang.org/genproto/googleapis/api v0.0.0-20230822172742-b8732ec3820d // indirect
 )
 
-replace github.com/goccy/go-zetasqlite => github.com/DataBiosphere/azul-go-zetasqlite v0.18.1-0.20240325224127-861082630394
+replace github.com/goccy/go-zetasqlite => github.com/DataBiosphere/azul-go-zetasqlite v0.18.1-0.20240906013724-5503fca9b1fa

@@ -21,8 +21,8 @@ cloud.google.com/go/pubsub v1.33.0/go.mod h1:f+w71I33OMyxf9VpMVcZbnG5KSUkCOUHYpF
 cloud.google.com/go/storage v1.30.1 h1:uOdMxAs8HExqBlnLtnQyP0YkvbiDpdGShGKtx6U/oNM=
 cloud.google.com/go/storage v1.30.1/go.mod h1:NfxhC0UJE1aXSx7CIIbCf7y9HKT7BiccwkR7+P7gN8E=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
-github.com/DataBiosphere/azul-go-zetasqlite v0.18.1-0.20240325224127-861082630394 h1:5ktkxE3AxX7ng/YqQiBmvZfSWSUhj6jogH8sxZhs5g8=
-github.com/DataBiosphere/azul-go-zetasqlite v0.18.1-0.20240325224127-861082630394/go.mod h1:ThavIQcmI6a/sVTpvJtj+idUui32gwbnXe1jeb7pISY=
+github.com/DataBiosphere/azul-go-zetasqlite v0.18.1-0.20240906013724-5503fca9b1fa h1:o7GjIbtM4jqIT37KCs7qB7zGujykdcFkZzwuskv3qNE=
+github.com/DataBiosphere/azul-go-zetasqlite v0.18.1-0.20240906013724-5503fca9b1fa/go.mod h1:Rn0R5UiCyy6SEdDbu1ZC/WytdZ0F3iWQhfnr7BBh6lQ=
 github.com/DataDog/go-hll v1.0.2 h1:Mm1HCqDMp/a6g/8OpJLkORYaRMy1AL0Kep8lopOgJeY=
 github.com/DataDog/go-hll v1.0.2/go.mod h1:nVlk+LiOuLOBG2pl+DJtGYBr6r6CUH/bGqebzrCUSKw=
 github.com/GoogleCloudPlatform/golang-samples/bigquery v0.0.0-20221115172052-07ffb99455e8 h1:jEVA33EPpr9R1Uc2vhxqd+PefUOqaYy5rAzC9haWPVg=
@@ -180,8 +180,8 @@ github.com/mattn/go-isatty v0.0.17 h1:BTarxUcIeDqL27Mc+vyvdWYSL28zpIhv3RoTdsLMPn
 github.com/mattn/go-isatty v0.0.17/go.mod h1:kYGgaQfpe5nmfYZH+SKPsOc2e4SrIfOl2e/yFXSvRLM=
 github.com/mattn/go-runewidth v0.0.9 h1:Lm995f3rfxdpd6TSmuVCHVb/QhupuXlYr8sCI/QdE+0=
 github.com/mattn/go-runewidth v0.0.9/go.mod h1:H031xJmbD/WCDINGzjvQ9THkh0rPKHF+m2gUSrubnMI=
-github.com/mattn/go-sqlite3 v1.14.16 h1:yOQRA0RpS5PFz/oikGwBEqvAWhWg5ufRz4ETLjwpU1Y=
-github.com/mattn/go-sqlite3 v1.14.16/go.mod h1:2eHXhiwb8IkHr+BDWZGa96P6+rkvnG63S2DGjv9HUNg=
+github.com/mattn/go-sqlite3 v1.14.23 h1:gbShiuAP1W5j9UOksQ06aiiqPMxYecovVGwmTxWtuw0=
+github.com/mattn/go-sqlite3 v1.14.23/go.mod h1:Uh1q+B4BYcTPb+yiD3kU8Ct7aC0hY9fxUwlHK0RXw+Y=
 github.com/minio/asm2plan9s v0.0.0-20200509001527-cdd76441f9d8 h1:AMFGa4R4MiIpspGNG7Z948v4n35fFGB3RR3G/ry4FWs=
 github.com/minio/asm2plan9s v0.0.0-20200509001527-cdd76441f9d8/go.mod h1:mC1jAcsrzbxHt8iiaC+zU4b1ylILSosueou12R++wfY=
 github.com/minio/c2goasm v0.0.0-20190812172519-36a3d3bbc4f3 h1:+n/aFZefKZp7spd8DFdX7uMikMLXX4oubIzJF4kv/wI=
