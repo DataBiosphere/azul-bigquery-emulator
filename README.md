@@ -42,3 +42,13 @@ azul_docker_registry="" make test
 cd -
 make stop_registry
 ```
+
+To update the dependency on `go-zetasqllite` after you pushed a commit to the 
+`azul` branch of that repository, run 
+
+```
+go mod edit -replace github.com/goccy/go-zetasqlite=github.com/DataBiosphere/azul-go-zetasqlite@azul
+go mod tidy
+```
+
+and commit the resulting changes to this repository.
