@@ -21,8 +21,8 @@ cloud.google.com/go/pubsub v1.33.0/go.mod h1:f+w71I33OMyxf9VpMVcZbnG5KSUkCOUHYpF
 cloud.google.com/go/storage v1.30.1 h1:uOdMxAs8HExqBlnLtnQyP0YkvbiDpdGShGKtx6U/oNM=
 cloud.google.com/go/storage v1.30.1/go.mod h1:NfxhC0UJE1aXSx7CIIbCf7y9HKT7BiccwkR7+P7gN8E=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
-github.com/DataBiosphere/azul-go-zetasqlite v0.18.1-0.20240906013724-5503fca9b1fa h1:o7GjIbtM4jqIT37KCs7qB7zGujykdcFkZzwuskv3qNE=
-github.com/DataBiosphere/azul-go-zetasqlite v0.18.1-0.20240906013724-5503fca9b1fa/go.mod h1:Rn0R5UiCyy6SEdDbu1ZC/WytdZ0F3iWQhfnr7BBh6lQ=
+github.com/DataBiosphere/azul-go-zetasqlite v0.18.1-0.20250403170716-93fe206451fa h1:qhmJr57bjUKN5yZLeMYE41uqmsVHNDHYLKWgyi0axjk=
+github.com/DataBiosphere/azul-go-zetasqlite v0.18.1-0.20250403170716-93fe206451fa/go.mod h1:Rn0R5UiCyy6SEdDbu1ZC/WytdZ0F3iWQhfnr7BBh6lQ=
 github.com/DataDog/go-hll v1.0.2 h1:Mm1HCqDMp/a6g/8OpJLkORYaRMy1AL0Kep8lopOgJeY=
 github.com/DataDog/go-hll v1.0.2/go.mod h1:nVlk+LiOuLOBG2pl+DJtGYBr6r6CUH/bGqebzrCUSKw=
 github.com/GoogleCloudPlatform/golang-samples/bigquery v0.0.0-20221115172052-07ffb99455e8 h1:jEVA33EPpr9R1Uc2vhxqd+PefUOqaYy5rAzC9haWPVg=
