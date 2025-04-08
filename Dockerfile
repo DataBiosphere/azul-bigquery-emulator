@@ -2,14 +2,15 @@ ARG azul_docker_bigquery_emulator_base_image_tag
 
 FROM ghcr.io/goccy/go-zetasql:latest
 
-ARG VERSION
-
 WORKDIR /work
 
 COPY . ./
 
 RUN go mod edit -replace github.com/goccy/go-zetasql=../go-zetasql
 RUN go mod download
+
+ARG azul_docker_bigquery_emulator_upstream_version
+ENV VERSION=${azul_docker_bigquery_emulator_upstream_version}
 
 RUN make emulator/build
 
