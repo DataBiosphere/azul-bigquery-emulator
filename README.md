@@ -80,14 +80,43 @@ $ make stop_registry
 ### Updating Zeta SQL dependencies
 
 Along with forking `bigquery-emulator` (this repository), we also forked two of 
-its sister repository `go-zetasqlite`.
+its sister repositories: `go-zetasqlite` and `go-zetasql`.
 
 To update this repository's dependency on `go-zetasqlite` after you pushed a 
-commit to the `azul` branch in our fork of that repository, run 
+commit to the `azul` branch in our fork of that repository, i.e., 
+`azul-go-zetasqlite`, run 
 
 ```
 go mod edit -replace github.com/goccy/go-zetasqlite=github.com/DataBiosphere/azul-go-zetasqlite@azul
 go mod tidy
 ```
 
-and commit the resulting changes to this repository.
+Commit the resulting changes to this repository.
+
+`go mod tidy` uses a caching proxy at golang.org to access version info on 
+github.com. I've observed that cache to be stale, especially after pushing tags. 
+To bypass the cache, use `GOPRIVATE=github.com/DataBiosphere/* go mod tidy`.   
+
+After updates to `azul-go-zetasql` a similar procedure needs to be performed on
+`azul-go-zetasqlite`:
+
+```
+go mod edit -replace github.com/goccy/go-zetasql=github.com/DataBiosphere/azul-go-zetasql@azul
+go mod tidy
+```
+
+Commit the resulting changes to `azul-go-zetasqlite`, run the above two pairs
+of commands (the one for `go-zetasql` and the one for `azul-go-zetasqlite` 
+against this repository and commit the resulting changes to this repository as 
+well.  
+
+The first build stage of the BQ emulator image uses as its base an image
+produced by a GitHub Actions build for the `go-zetasql` repository. So in
+addition to updating the Go dependency as described above, the base image
+reference needs to be updated. This is done via the `azul_docker_go_zetasql_…`
+variables in `.github/workflows/build.yml` for both `azul-go-zetasql` and this
+repository. The commit to `azul-go-zetasql` would have had to include at least
+an increment to `azul_docker_go_zetasql_internal_version`. Note that we do not
+mirror the `go-zetasql` image to ECR as it is used only by the GitHub Actions
+build for this repository, and `make images` (see above). The former does not 
+have access to the ECR mirror as the mirror is not public.

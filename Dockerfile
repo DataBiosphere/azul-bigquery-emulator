@@ -1,6 +1,9 @@
+ARG azul_docker_go_zetasql_image
+ARG azul_docker_go_zetasql_upstream_version
+ARG azul_docker_go_zetasql_internal_version
 ARG azul_docker_bigquery_emulator_base_image_tag
 
-FROM ghcr.io/goccy/go-zetasql:latest
+FROM ${azul_docker_go_zetasql_image}:${azul_docker_go_zetasql_upstream_version}-${azul_docker_go_zetasql_internal_version}
 
 WORKDIR /work
 

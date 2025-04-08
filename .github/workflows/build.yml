@@ -34,7 +34,13 @@ env:
   # Both this value (internal_version) and the combined value (upstream_version
   # + internal_version) will be passed as arguments to the Dockerfile.
   #
-  azul_docker_bigquery_emulator_internal_version: 28
+  azul_docker_bigquery_emulator_internal_version: 29
+
+  # The coordinates of the base image for the first build stage for this image
+  #
+  azul_docker_go_zetasql_image: docker.io/ucscgi/azul-go-zetasql
+  azul_docker_go_zetasql_upstream_version: 0.5.5
+  azul_docker_go_zetasql_internal_version: 5
 
 jobs:
   build-image:
@@ -92,6 +98,9 @@ jobs:
             azul_docker_bigquery_emulator_base_image_tag=${{ env.azul_docker_bigquery_emulator_base_image_tag }}
             azul_docker_bigquery_emulator_upstream_version=${{ env.azul_docker_bigquery_emulator_upstream_version }}
             azul_docker_bigquery_emulator_internal_version=${{ env.azul_docker_bigquery_emulator_internal_version }}
+            azul_docker_go_zetasql_image=${{ env.azul_docker_go_zetasql_image }}
+            azul_docker_go_zetasql_upstream_version=${{ env.azul_docker_go_zetasql_upstream_version }}
+            azul_docker_go_zetasql_internal_version=${{ env.azul_docker_go_zetasql_internal_version }}
           platforms: linux/amd64
           context: .
           # We disable provenance for a single platform (non-multiarch) build

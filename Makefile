@@ -9,9 +9,12 @@ endif
 
 .PHONY: emulator/build
 emulator/build:
-	CGO_ENABLED=1 CXX=clang++ go build -o bigquery-emulator \
-		-ldflags='-s -w -X main.version=${VERSION} -X main.revision=${REVISION} ${STATIC_LINK_FLAG}' \
-		./cmd/bigquery-emulator
+	CGO_ENABLED=1 \
+	CXX=clang++ \
+	CGO_CFLAGS="-fno-PIC"  CGO_CPPFLAGS="-fno-PIC"  CGO_CXXFLAGS="-fno-PIC" \
+		go build -o bigquery-emulator \
+			-ldflags='-s -w -X main.version=${VERSION} -X main.revision=${REVISION} ${STATIC_LINK_FLAG}' \
+			./cmd/bigquery-emulator
 
 # Copy environment variable definitions from GitHub Actions build so we don't
 # need to duplicate them here for a local build:
@@ -33,6 +36,9 @@ docker/build:
 		--build-arg azul_docker_bigquery_emulator_base_image_tag=$(azul_docker_bigquery_emulator_base_image_tag) \
 		--build-arg azul_docker_bigquery_emulator_upstream_version=$(azul_docker_bigquery_emulator_upstream_version) \
 		--build-arg azul_docker_bigquery_emulator_internal_version=$(azul_docker_bigquery_emulator_internal_version) \
+		--build-arg azul_docker_go_zetasql_image=$(azul_docker_go_zetasql_image) \
+		--build-arg azul_docker_go_zetasql_upstream_version=$(azul_docker_go_zetasql_upstream_version) \
+		--build-arg azul_docker_go_zetasql_internal_version=$(azul_docker_go_zetasql_internal_version) \
 		--tag $(azul_docker_registry)$(azul_docker_bigquery_emulator_image):$(azul_docker_bigquery_emulator_upstream_version)-$(azul_docker_bigquery_emulator_internal_version) \
 		.
 
