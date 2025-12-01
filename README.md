@@ -71,7 +71,7 @@ empty string:
 
 ```
 $ cd ../azul
-$ make image_manifests.json
+$ make docker_images.json
 $ azul_docker_registry="" make test
 $ cd -
 $ make stop_registry
