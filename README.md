@@ -106,7 +106,7 @@ go mod tidy
 ```
 
 Commit the resulting changes to `azul-go-zetasqlite`, run the above two pairs
-of commands (the one for `go-zetasql` and the one for `azul-go-zetasqlite` 
+of commands (the one for `azul-go-zetasql` and the one for `azul-go-zetasqlite` 
 against this repository and commit the resulting changes to this repository as 
 well.  
 
