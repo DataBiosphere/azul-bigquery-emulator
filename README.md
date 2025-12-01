@@ -91,11 +91,14 @@ go mod edit -replace github.com/goccy/go-zetasqlite=github.com/DataBiosphere/azu
 go mod tidy
 ```
 
-Commit the resulting changes to this repository.
+Commit the resulting changes to this repository. If you had to force-push to the
+`azul` branch of either of these two repositories, you may need to use the
+explicit commit ID instead of `azul` in the `go mod edit` command above.
 
-`go mod tidy` uses a caching proxy at golang.org to access version info on 
-github.com. I've observed that cache to be stale, especially after pushing tags. 
-To bypass the cache, use `GOPRIVATE=github.com/DataBiosphere/* go mod tidy`.   
+Additionally, `go mod tidy` uses a caching proxy at golang.org to access version
+info on github.com. I've observed that cache to be stale, especially after
+pushing tags. To bypass the cache, use `GOPRIVATE=github.com/DataBiosphere/* go
+mod tidy`.
 
 After updates to `azul-go-zetasql` a similar procedure needs to be performed on
 `azul-go-zetasqlite`:
