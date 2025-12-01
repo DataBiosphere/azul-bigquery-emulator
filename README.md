@@ -58,7 +58,7 @@ diff --git a/environment.py b/environment.py
              },
              'bigquery_emulator': {
 -                'ref': 'docker.io/ucscgi/azul-bigquery-emulator:0.4.4-26',
-+                'ref': 'localhost:5000/docker.io/ucscgi/azul-bigquery-emulator:0.4.4-26',
++                'ref': 'localhost:5000/docker.io/ucscgi/azul-bigquery-emulator:0.4.4-27',
                  'url': 'https://hub.docker.com/repository/docker/ucscgi/azul-bigquery-emulator',
                  'is_custom': True
              },
