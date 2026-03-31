@@ -30,7 +30,7 @@ env:
   # The version of this image. The image will be tagged with the version of the
   # upstream image followed by the value of this variable. Increment this value
   # to update the OS packages installed in the image.
-  # 
+  #
   # Both this value (internal_version) and the combined value (upstream_version
   # + internal_version) will be passed as arguments to the Dockerfile.
   #
