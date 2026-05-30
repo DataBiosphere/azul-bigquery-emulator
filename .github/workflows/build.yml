@@ -21,7 +21,7 @@ env:
   # value isn't reflected in the tag for this image, you also need to bump the
   # internal version below when changing this variable.
   #
-  azul_docker_bigquery_emulator_base_image_tag: trixie-20260505-slim
+  azul_docker_bigquery_emulator_base_image_tag: trixie-20260518-slim
 
   # The version where this repo diverges from the upstream repo.
   #
@@ -34,13 +34,13 @@ env:
   # Both this value (internal_version) and the combined value (upstream_version
   # + internal_version) will be passed as arguments to the Dockerfile.
   #
-  azul_docker_bigquery_emulator_internal_version: 63
+  azul_docker_bigquery_emulator_internal_version: 64
 
   # The coordinates of the base image for the first build stage for this image
   #
   azul_docker_go_zetasql_image: docker.io/ucscgi/azul-go-zetasql
   azul_docker_go_zetasql_upstream_version: 0.5.5
-  azul_docker_go_zetasql_internal_version: 11
+  azul_docker_go_zetasql_internal_version: 12
 
 jobs:
   build-image:
