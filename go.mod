@@ -1,6 +1,6 @@
 module github.com/goccy/bigquery-emulator
 
-go 1.26.3
+go 1.26.4
 
 require (
 	cloud.google.com/go/bigquery v1.77.0
@@ -112,4 +112,4 @@ require (
 
 replace github.com/goccy/go-zetasqlite => github.com/DataBiosphere/azul-go-zetasqlite v0.18.1-0.20260530025207-5cd4b9cac6b2
 
-replace github.com/goccy/go-zetasql => github.com/DataBiosphere/azul-go-zetasql v0.5.6-0.20260529180242-35d5d7a7b775
+replace github.com/goccy/go-zetasql => github.com/DataBiosphere/azul-go-zetasql v0.5.6-0.20260610162841-1e2851f86e61

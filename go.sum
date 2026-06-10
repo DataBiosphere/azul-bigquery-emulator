@@ -50,6 +50,7 @@ github.com/DataBiosphere/azul-go-zetasql v0.5.6-0.20260428001009-224d4db0dcbf h1
 github.com/DataBiosphere/azul-go-zetasql v0.5.6-0.20260428001009-224d4db0dcbf/go.mod h1:v6mQ2bkc6UaIbEmE21K4udbjhcUZgQeQKvdHngYbM88=
 github.com/DataBiosphere/azul-go-zetasql v0.5.6-0.20260529180242-35d5d7a7b775 h1:kW2FAlTzvfT/ibpD3Ib/hnm9ikNniHyxqqt2VhVJs4I=
 github.com/DataBiosphere/azul-go-zetasql v0.5.6-0.20260529180242-35d5d7a7b775/go.mod h1:+3l5AwVGX3rxVTBh5Mgv62lVO/Ba5hhsaOEXd7ZuYdg=
+github.com/DataBiosphere/azul-go-zetasql v0.5.6-0.20260610162841-1e2851f86e61/go.mod h1:MhtKJ0VMPqnFPEjjelE3Fg7qW6ilfC1CstkFiPV7neo=
 github.com/DataBiosphere/azul-go-zetasqlite v0.18.1-0.20260428033323-101946439057 h1:8lha9a4R2iUEhi+YMc1A8TTcqUxm3kkMSfnT1Oekhu8=
 github.com/DataBiosphere/azul-go-zetasqlite v0.18.1-0.20260428033323-101946439057/go.mod h1:MPmiwPvYxCqokU9yvRT1xS8ZQiqFni3MBtlyJJrmI6A=
 github.com/DataBiosphere/azul-go-zetasqlite v0.18.1-0.20260530025207-5cd4b9cac6b2 h1:MuViFXKVrAc3gH+AOgnzTkc/V5ihEGpfKC0+NWaFfmc=
